@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// node render.mjs scenes/<name>.html [--fps 60] [--out out/<name>.mp4] [--audio track.wav]
+// node render.mjs scenes/<name>.html [--fps 60] [--out out/<name>.mp4] [--audio track.wav] [--bitrate 10M]
 // node render.mjs scenes/<name>.html --contact [--beats beats.json]   -> out/<name>.contact.png
 //
 // A scene defines window.DURATION and window.seek(t). Each frame is seeked explicitly and screenshotted,
@@ -91,7 +91,9 @@ try {
     const frames = Math.round(duration * fps);
     const argv = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-'];
     if (audio) argv.push('-i', audio, '-af', await loudnormFilter(audio), '-c:a', 'aac', '-b:a', '256k', '-shortest');
-    argv.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '16', '-preset', 'slow', '-movflags', '+faststart', out);
+    const bitrate = opt('--bitrate');
+    const rate = bitrate ? ['-b:v', bitrate, '-minrate', bitrate, '-maxrate', bitrate, '-x264-params', 'nal-hrd=cbr', '-bufsize', `${parseFloat(bitrate) * 2}M`] : ['-crf', '16'];
+    argv.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', ...rate, '-preset', 'slow', '-movflags', '+faststart', out);
     await run('ffmpeg', argv, {
       feed: async (stdin) => {
         for (let i = 0; i < frames; i++) {

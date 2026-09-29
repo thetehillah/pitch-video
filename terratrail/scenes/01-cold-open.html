@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>01 Cold open</title>
+<link rel="stylesheet" href="../brand.css">
+<script src="../common.js"></script>
+<script src="../clutter.js"></script>
+</head>
+<body>
+<div id="stage"></div>
+<div id="caption"></div>
+<script>
+  // Scene 1 (0-8s): the manual chaos of installment land sales.
+  const CUES = [{ start: 0.6, end: 8, text: 'If you sell land on installments in Nigeria, you know this.' }];
+  const clutter = buildClutter(document.getElementById('stage'));
+
+  window.DURATION = 8;
+  window.seek = (t) => {
+    clutter.update(t, 0);
+    setCaption(t, CUES);
+  };
+  window.seek(0);
+</script>
+</body>
+</html>
