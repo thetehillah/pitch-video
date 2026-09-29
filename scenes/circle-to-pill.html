@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1920px; height: 1080px; background: #fff; overflow: hidden; }
+  #shape { position: absolute; left: 50%; top: 50%; height: 240px; background: #000;
+           border-radius: 120px; transform: translate(-50%, -50%); }
+</style>
+<script src="../lib/spring.js"></script>
+</head>
+<body>
+<div id="shape"></div>
+<script>
+  // Scene contract: duration (s) + renderFrame(t) that draws the scene at time t.
+  window.scene = {
+    duration: 2,
+    renderFrame(t) {
+      const p = spring(t, { stiffness: 120, damping: 12 });
+      const w = 240 + (760 - 240) * p; // circle (240) -> pill (760)
+      document.getElementById('shape').style.width = w + 'px';
+    },
+  };
+</script>
+</body>
+</html>
