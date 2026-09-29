@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "render": "node render.js"
+    "render": "node render.mjs",
+    "beats": "python3 tools/beats.py"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,6 @@
   "devDependencies": {
     "playwright": "^1.56.1"
   },
-  "private": true
+  "private": true,
+  "type": "module"
 }

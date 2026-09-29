@@ -12,15 +12,13 @@
 <body>
 <div id="shape"></div>
 <script>
-  // Scene contract: duration (s) + renderFrame(t) that draws the scene at time t.
-  window.scene = {
-    duration: 2,
-    renderFrame(t) {
-      const p = spring(t, { stiffness: 120, damping: 12 });
-      const w = 240 + (760 - 240) * p; // circle (240) -> pill (760)
-      document.getElementById('shape').style.width = w + 'px';
-    },
+  // Render contract: DURATION in seconds, seek(t) paints frame t from scratch.
+  window.DURATION = 2;
+  window.seek = (t) => {
+    const p = spring(t, { stiffness: 120, damping: 12 });
+    document.getElementById('shape').style.width = 240 + (760 - 240) * p + 'px'; // circle -> pill
   };
+  window.seek(0);
 </script>
 </body>
 </html>
