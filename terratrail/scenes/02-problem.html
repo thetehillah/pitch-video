@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>02 Problem</title>
+<link rel="stylesheet" href="../brand.css">
+<script src="../common.js"></script>
+<style>
+  .plot { position: absolute; left: 330px; top: 300px; width: 300px; height: 300px; border: 3px solid var(--ink);
+          box-sizing: border-box; }
+  .plot::after { content: ''; position: absolute; inset: 22px; border: 1.5px dashed #8E8A84; }
+  .plot-label { position: absolute; left: 330px; top: 624px; width: 300px; text-align: center; font-size: 26px;
+                font-weight: 500; color: #555; }
+  .price { position: absolute; left: 760px; top: 318px; font-size: 64px; font-weight: 650; letter-spacing: -0.02em; }
+  .price small { display: block; font-size: 28px; font-weight: 500; color: #555; letter-spacing: 0; margin-top: 8px; }
+  .bar { position: absolute; left: 760px; top: 480px; display: flex; gap: 8px; }
+  .seg { width: 62px; height: 74px; border: 2px solid var(--ink); box-sizing: border-box; border-radius: 6px;
+         position: relative; overflow: hidden; }
+  .seg i { position: absolute; inset: 0; background: var(--ink); transform-origin: 50% 100%; }
+  .month { position: absolute; left: 760px; top: 580px; font-size: 26px; font-weight: 500; color: #555; }
+
+  .card { position: absolute; top: 250px; width: 500px; height: 440px; border: 2.5px solid var(--ink);
+          border-radius: 24px; box-sizing: border-box; padding: 48px 44px; }
+  .card .icon { height: 150px; position: relative; }
+  .card h3 { margin: 34px 0 10px; font-size: 44px; font-weight: 650; letter-spacing: -0.02em; }
+  .card p { margin: 0; font-size: 30px; font-weight: 500; color: #555; }
+  .bub { position: absolute; height: 58px; border-radius: 22px 22px 22px 6px; background: var(--ink); }
+  .grid { position: absolute; left: 0; top: 10px; display: grid; grid-template-columns: repeat(5, 54px);
+          grid-auto-rows: 30px; border-top: 2px solid var(--ink); border-left: 2px solid var(--ink); }
+  .grid span { border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="installment">
+    <div class="plot"></div>
+    <div class="plot-label">Plot 14 · 500 sqm</div>
+    <div class="price">₦6,000,000<small>paid in 12 monthly installments</small></div>
+    <div class="bar" id="bar"></div>
+    <div class="month" id="month"></div>
+  </div>
+  <div class="card" id="c1" style="left:150px">
+    <div class="icon">
+      <div class="bub" style="left:0;top:8px;width:230px"></div>
+      <div class="bub" style="left:40px;top:84px;width:170px"></div>
+    </div>
+    <h3>Receipts</h3><p>sent on WhatsApp</p>
+  </div>
+  <div class="card" id="c2" style="left:710px">
+    <div class="icon"><div class="grid" id="grid"></div></div>
+    <h3>Schedules</h3><p>kept in Excel</p>
+  </div>
+  <div class="card" id="c3" style="left:1270px">
+    <div class="icon">
+      <div class="bub" style="left:0;top:8px;width:150px;display:flex;align-items:center;justify-content:center;color:var(--paper);font-size:34px;font-weight:700">₦?</div>
+      <div class="bub" style="left:120px;top:84px;width:150px;border-radius:22px 22px 6px 22px;display:flex;align-items:center;justify-content:center;color:var(--paper);font-size:34px;font-weight:700">?!</div>
+    </div>
+    <h3>Commissions</h3><p>argued every month end</p>
+  </div>
+</div>
+<div id="caption"></div>
+<script>
+  // Scene 2 (8-20s): what an installment sale is, and how it is tracked today.
+  const CUES = [
+    { start: 0.2, end: 4.6, text: 'Most Nigerians buy land in installments, paying over months or years.' },
+    { start: 4.6, end: 7.6, text: 'But the companies selling it still track everything by hand.' },
+    { start: 7.6, end: 9.0, text: 'Receipts on WhatsApp.' },
+    { start: 9.0, end: 10.3, text: 'Schedules in Excel.' },
+    { start: 10.3, end: 12, text: 'Commission arguments every month end.' },
+  ];
+  const bar = document.getElementById('bar');
+  const segs = Array.from({ length: 12 }, () => el('i', {}, el('div', { class: 'seg' }, bar)));
+  const grid = document.getElementById('grid');
+  for (let i = 0; i < 15; i++) el('span', {}, grid);
+  const installment = document.getElementById('installment');
+  const month = document.getElementById('month');
+  const cards = ['c1', 'c2', 'c3'].map((id) => document.getElementById(id));
+  const cardIn = [5.4, 5.65, 5.9];     // outlines arrive while "by hand" is spoken
+  const cardLit = [7.6, 9.0, 10.3];    // each card's label lands on its phrase
+
+  window.DURATION = 12;
+  window.seek = (t) => {
+    // Beat 1: a plot and its price, paid off segment by segment.
+    const inP = ease.out(prog(t, 0.1, 0.7));
+    const outP = ease.inOut(prog(t, 4.7, 0.7));
+    installment.style.opacity = inP * (1 - outP);
+    installment.style.transform = `translateY(${lerp(20, 0, inP) - 60 * outP}px)`;
+    let paid = 0;
+    segs.forEach((s, i) => {
+      const p = ease.out(prog(t, 1.0 + i * 0.27, 0.22));
+      s.style.transform = `scaleY(${p})`;
+      if (p > 0.5) paid = i + 1;
+    });
+    month.textContent = paid ? `Month ${paid} of 12` : '';
+
+    // Beat 2: three ways it is tracked by hand.
+    cards.forEach((c, i) => {
+      const a = ease.out(prog(t, cardIn[i], 0.6));
+      const lit = ease.out(prog(t, cardLit[i], 0.45));
+      c.style.opacity = a;
+      c.style.transform = `translateY(${lerp(40, 0, a)}px)`;
+      c.querySelector('.icon').style.opacity = lerp(0.18, 1, lit);
+      c.querySelectorAll('h3, p').forEach((n) => { n.style.opacity = lit; });
+      c.style.borderColor = lit > 0.5 ? '#111' : '#C9C5BF';
+    });
+    setCaption(t, CUES);
+  };
+  window.seek(0);
+</script>
+</body>
+</html>
