@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>02 Problem</title>
 <link rel="stylesheet" href="../brand.css">
+<script src="../timeline.js"></script>
 <script src="../common.js"></script>
 <style>
   .plot { position: absolute; left: 330px; top: 300px; width: 300px; height: 300px; border: 3px solid var(--ink);
@@ -61,13 +62,7 @@
 <div id="caption"></div>
 <script>
   // Scene 2 (8-20s): what an installment sale is, and how it is tracked today.
-  const CUES = [
-    { start: 0.2, end: 4.6, text: 'Most Nigerians buy land in installments, paying over months or years.' },
-    { start: 4.6, end: 7.6, text: 'But the companies selling it still track everything by hand.' },
-    { start: 7.6, end: 9.0, text: 'Receipts on WhatsApp.' },
-    { start: 9.0, end: 10.3, text: 'Schedules in Excel.' },
-    { start: 10.3, end: 12, text: 'Commission arguments every month end.' },
-  ];
+  const T = sceneTiming(2);
   const bar = document.getElementById('bar');
   const segs = Array.from({ length: 12 }, () => el('i', {}, el('div', { class: 'seg' }, bar)));
   const grid = document.getElementById('grid');
@@ -75,19 +70,21 @@
   const installment = document.getElementById('installment');
   const month = document.getElementById('month');
   const cards = ['c1', 'c2', 'c3'].map((id) => document.getElementById(id));
-  const cardIn = [5.4, 5.65, 5.9];     // outlines arrive while "by hand" is spoken
-  const cardLit = [7.6, 9.0, 10.3];    // each card's label lands on its phrase
+  const tBut = T.word('but');
+  const fillFrom = T.word('nigerians'), fillTo = tBut - 0.9;  // months fill while the first line is spoken
+  const cardIn = [0, 1, 2].map((i) => T.word('companies') + i * 0.3);  // outlines arrive as the old tools are named
+  const cardLit = [T.word('receipts'), T.word('schedules'), T.word('commission')]; // labels land on each phrase
 
-  window.DURATION = 12;
+  window.DURATION = T.duration;
   window.seek = (t) => {
     // Beat 1: a plot and its price, paid off segment by segment.
     const inP = ease.out(prog(t, 0.1, 0.7));
-    const outP = ease.inOut(prog(t, 4.7, 0.7));
+    const outP = ease.inOut(prog(t, tBut - 0.2, 0.7));
     installment.style.opacity = inP * (1 - outP);
     installment.style.transform = `translateY(${lerp(20, 0, inP) - 60 * outP}px)`;
     let paid = 0;
     segs.forEach((s, i) => {
-      const p = ease.out(prog(t, 1.0 + i * 0.27, 0.22));
+      const p = ease.out(prog(t, fillFrom + i * (fillTo - fillFrom) / 12, 0.22));
       s.style.transform = `scaleY(${p})`;
       if (p > 0.5) paid = i + 1;
     });
@@ -103,7 +100,7 @@
       c.querySelectorAll('h3, p').forEach((n) => { n.style.opacity = lit; });
       c.style.borderColor = lit > 0.5 ? '#111' : '#C9C5BF';
     });
-    setCaption(t, CUES);
+    setCaption(t, T.cues);
   };
   window.seek(0);
 </script>

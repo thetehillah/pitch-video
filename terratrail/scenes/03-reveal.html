@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>03 Reveal</title>
 <link rel="stylesheet" href="../brand.css">
+<script src="../timeline.js"></script>
 <script src="../common.js"></script>
 <script src="../clutter.js"></script>
 <style>
@@ -18,17 +19,18 @@
 <script>
   // Scene 3 (20-26s): the clutter from scene 1 clears, the wordmark arrives.
   // Wordmark is set in Inter as a placeholder until the real logo file is supplied.
-  const CUES = [{ start: 1.9, end: 6, text: 'So we built Terratrail.' }];
+  const T = sceneTiming(3);
+  const tMark = T.word('terratrail') - 0.25; // wordmark lands with the name
   const clutter = buildClutter(document.getElementById('stage'));
   const mark = document.getElementById('wordmark');
 
-  window.DURATION = 6;
+  window.DURATION = T.duration;
   window.seek = (t) => {
-    clutter.update(CLUTTER_END, prog(t, 0.25, 1.4));
-    const m = ease.out(prog(t, 1.8, 1.2));
+    clutter.update(CLUTTER_END, prog(t, 0.1, 1.2));
+    const m = ease.out(prog(t, tMark, 0.9));
     mark.style.opacity = m;
     mark.style.transform = `translateY(${lerp(18, 0, m)}px) scale(${lerp(0.985, 1, m)})`;
-    setCaption(t, CUES);
+    setCaption(t, T.cues);
   };
   window.seek(0);
 </script>

@@ -88,7 +88,7 @@ try {
     fs.rmSync(tmp, { recursive: true });
     console.log(`${out}  ${times.length} frames at t=${times.map((t) => t.toFixed(2)).join(', ')}`);
   } else {
-    const frames = Math.round(duration * fps);
+    const frames = Number(opt('--frames', Math.round(duration * fps)));
     const argv = ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-'];
     if (audio) argv.push('-i', audio, '-af', await loudnormFilter(audio), '-c:a', 'aac', '-b:a', '256k', '-shortest');
     const bitrate = opt('--bitrate');

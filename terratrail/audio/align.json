@@ -1,0 +1,1282 @@
+[
+ {
+  "word": "if",
+  "start": 1.98,
+  "end": 2.22
+ },
+ {
+  "word": "you",
+  "start": 2.22,
+  "end": 2.39
+ },
+ {
+  "word": "sell",
+  "start": 2.39,
+  "end": 2.76
+ },
+ {
+  "word": "land",
+  "start": 2.76,
+  "end": 3.4
+ },
+ {
+  "word": "on",
+  "start": 3.76,
+  "end": 3.9
+ },
+ {
+  "word": "installments",
+  "start": 3.9,
+  "end": 4.65
+ },
+ {
+  "word": "in",
+  "start": 4.65,
+  "end": 4.74
+ },
+ {
+  "word": "nigeria",
+  "start": 4.74,
+  "end": 5.34
+ },
+ {
+  "word": "you",
+  "start": 6.04,
+  "end": 6.21
+ },
+ {
+  "word": "know",
+  "start": 6.21,
+  "end": 6.37
+ },
+ {
+  "word": "this",
+  "start": 6.37,
+  "end": 6.86
+ },
+ {
+  "word": "most",
+  "start": 7.59,
+  "end": 7.88
+ },
+ {
+  "word": "nigerians",
+  "start": 7.88,
+  "end": 8.73
+ },
+ {
+  "word": "buy",
+  "start": 9.24,
+  "end": 9.49
+ },
+ {
+  "word": "land",
+  "start": 9.49,
+  "end": 9.95
+ },
+ {
+  "word": "in",
+  "start": 9.95,
+  "end": 10.1
+ },
+ {
+  "word": "installments",
+  "start": 10.1,
+  "end": 10.96
+ },
+ {
+  "word": "paying",
+  "start": 10.96,
+  "end": 11.83
+ },
+ {
+  "word": "over",
+  "start": 11.83,
+  "end": 12.26
+ },
+ {
+  "word": "months",
+  "start": 12.26,
+  "end": 13.03
+ },
+ {
+  "word": "or",
+  "start": 13.14,
+  "end": 13.32
+ },
+ {
+  "word": "years",
+  "start": 13.32,
+  "end": 13.95
+ },
+ {
+  "word": "but",
+  "start": 14.92,
+  "end": 15.19
+ },
+ {
+  "word": "the",
+  "start": 15.19,
+  "end": 15.31
+ },
+ {
+  "word": "companies",
+  "start": 15.31,
+  "end": 16.01
+ },
+ {
+  "word": "selling",
+  "start": 16.01,
+  "end": 16.73
+ },
+ {
+  "word": "it",
+  "start": 16.8,
+  "end": 17.39
+ },
+ {
+  "word": "still",
+  "start": 17.39,
+  "end": 17.71
+ },
+ {
+  "word": "track",
+  "start": 17.71,
+  "end": 18.46
+ },
+ {
+  "word": "everything",
+  "start": 18.46,
+  "end": 18.94
+ },
+ {
+  "word": "by",
+  "start": 18.94,
+  "end": 19.14
+ },
+ {
+  "word": "hand",
+  "start": 19.14,
+  "end": 19.54
+ },
+ {
+  "word": "receipts",
+  "start": 20.03,
+  "end": 20.45
+ },
+ {
+  "word": "on",
+  "start": 20.45,
+  "end": 20.59
+ },
+ {
+  "word": "whatsapp",
+  "start": 20.59,
+  "end": 21.24
+ },
+ {
+  "word": "schedules",
+  "start": 21.7,
+  "end": 22.18
+ },
+ {
+  "word": "in",
+  "start": 22.18,
+  "end": 22.32
+ },
+ {
+  "word": "excel",
+  "start": 22.32,
+  "end": 22.95
+ },
+ {
+  "word": "commission",
+  "start": 23.7,
+  "end": 24.14
+ },
+ {
+  "word": "arguments",
+  "start": 24.14,
+  "end": 24.93
+ },
+ {
+  "word": "every",
+  "start": 25.23,
+  "end": 25.54
+ },
+ {
+  "word": "month",
+  "start": 25.54,
+  "end": 25.95
+ },
+ {
+  "word": "end",
+  "start": 25.95,
+  "end": 26.37
+ },
+ {
+  "word": "so",
+  "start": 27.36,
+  "end": 27.48
+ },
+ {
+  "word": "we",
+  "start": 27.48,
+  "end": 27.61
+ },
+ {
+  "word": "built",
+  "start": 27.61,
+  "end": 27.93
+ },
+ {
+  "word": "terratrail",
+  "start": 27.93,
+  "end": 28.71
+ },
+ {
+  "word": "create",
+  "start": 30.69,
+  "end": 30.93
+ },
+ {
+  "word": "a",
+  "start": 30.93,
+  "end": 30.96
+ },
+ {
+  "word": "subscription",
+  "start": 30.96,
+  "end": 31.86
+ },
+ {
+  "word": "and",
+  "start": 32.45,
+  "end": 32.7
+ },
+ {
+  "word": "every",
+  "start": 32.7,
+  "end": 32.92
+ },
+ {
+  "word": "installment",
+  "start": 32.92,
+  "end": 33.88
+ },
+ {
+  "word": "is",
+  "start": 33.88,
+  "end": 34.44
+ },
+ {
+  "word": "scheduled",
+  "start": 34.9,
+  "end": 36.15
+ },
+ {
+  "word": "for",
+  "start": 36.15,
+  "end": 36.35
+ },
+ {
+  "word": "you",
+  "start": 36.35,
+  "end": 36.52
+ },
+ {
+  "word": "automatically",
+  "start": 36.75,
+  "end": 37.59
+ },
+ {
+  "word": "receipts",
+  "start": 38.38,
+  "end": 38.82
+ },
+ {
+  "word": "come",
+  "start": 38.82,
+  "end": 39.14
+ },
+ {
+  "word": "in",
+  "start": 39.14,
+  "end": 39.38
+ },
+ {
+  "word": "you",
+  "start": 39.7,
+  "end": 39.79
+ },
+ {
+  "word": "approve",
+  "start": 39.79,
+  "end": 40.08
+ },
+ {
+  "word": "them",
+  "start": 40.08,
+  "end": 40.27
+ },
+ {
+  "word": "in",
+  "start": 40.27,
+  "end": 40.33
+ },
+ {
+  "word": "one",
+  "start": 40.33,
+  "end": 40.57
+ },
+ {
+  "word": "tap",
+  "start": 40.57,
+  "end": 40.91
+ },
+ {
+  "word": "the",
+  "start": 41.51,
+  "end": 41.67
+ },
+ {
+  "word": "balance",
+  "start": 41.67,
+  "end": 42.11
+ },
+ {
+  "word": "updates",
+  "start": 42.11,
+  "end": 42.65
+ },
+ {
+  "word": "itself",
+  "start": 42.65,
+  "end": 43.03
+ },
+ {
+  "word": "your",
+  "start": 44.61,
+  "end": 45.0
+ },
+ {
+  "word": "reps",
+  "start": 45.0,
+  "end": 45.36
+ },
+ {
+  "word": "see",
+  "start": 45.36,
+  "end": 45.52
+ },
+ {
+  "word": "exactly",
+  "start": 45.52,
+  "end": 46.04
+ },
+ {
+  "word": "what",
+  "start": 46.04,
+  "end": 46.3
+ },
+ {
+  "word": "they've",
+  "start": 46.3,
+  "end": 46.57
+ },
+ {
+  "word": "earned",
+  "start": 46.57,
+  "end": 47.13
+ },
+ {
+  "word": "no",
+  "start": 47.57,
+  "end": 47.77
+ },
+ {
+  "word": "more",
+  "start": 47.77,
+  "end": 48.0
+ },
+ {
+  "word": "disputes",
+  "start": 48.0,
+  "end": 48.91
+ },
+ {
+  "word": "and",
+  "start": 49.83,
+  "end": 50.14
+ },
+ {
+  "word": "buyers",
+  "start": 50.14,
+  "end": 50.61
+ },
+ {
+  "word": "get",
+  "start": 50.61,
+  "end": 51.04
+ },
+ {
+  "word": "a",
+  "start": 51.56,
+  "end": 51.68
+ },
+ {
+  "word": "beautiful",
+  "start": 51.68,
+  "end": 52.3
+ },
+ {
+  "word": "page",
+  "start": 52.3,
+  "end": 52.83
+ },
+ {
+  "word": "to",
+  "start": 52.83,
+  "end": 53.05
+ },
+ {
+  "word": "explore",
+  "start": 53.05,
+  "end": 53.44
+ },
+ {
+  "word": "estates",
+  "start": 53.44,
+  "end": 54.18
+ },
+ {
+  "word": "and",
+  "start": 54.18,
+  "end": 54.47
+ },
+ {
+  "word": "book",
+  "start": 54.47,
+  "end": 54.68
+ },
+ {
+  "word": "inspections",
+  "start": 55.1,
+  "end": 56.18
+ },
+ {
+  "word": "terratrail",
+  "start": 56.9,
+  "end": 57.37
+ },
+ {
+  "word": "is",
+  "start": 57.37,
+  "end": 57.56
+ },
+ {
+  "word": "live",
+  "start": 57.56,
+  "end": 57.88
+ },
+ {
+  "word": "today",
+  "start": 57.88,
+  "end": 58.35
+ },
+ {
+  "word": "landrite",
+  "start": 58.66,
+  "end": 59.13
+ },
+ {
+  "word": "by",
+  "start": 59.13,
+  "end": 59.27
+ },
+ {
+  "word": "goe",
+  "start": 59.27,
+  "end": 59.64
+ },
+ {
+  "word": "is",
+  "start": 59.64,
+  "end": 59.91
+ },
+ {
+  "word": "our",
+  "start": 59.91,
+  "end": 60.03
+ },
+ {
+  "word": "first",
+  "start": 60.03,
+  "end": 60.54
+ },
+ {
+  "word": "paying",
+  "start": 60.54,
+  "end": 60.78
+ },
+ {
+  "word": "customer",
+  "start": 60.78,
+  "end": 61.81
+ },
+ {
+  "word": "lumina",
+  "start": 62.74,
+  "end": 63.12
+ },
+ {
+  "word": "properties",
+  "start": 63.12,
+  "end": 63.7
+ },
+ {
+  "word": "is",
+  "start": 63.7,
+  "end": 63.86
+ },
+ {
+  "word": "running",
+  "start": 63.86,
+  "end": 64.18
+ },
+ {
+  "word": "a",
+  "start": 64.18,
+  "end": 64.24
+ },
+ {
+  "word": "pilot",
+  "start": 64.24,
+  "end": 64.74
+ },
+ {
+  "word": "and",
+  "start": 64.74,
+  "end": 64.96
+ },
+ {
+  "word": "rehoboth",
+  "start": 64.96,
+  "end": 65.53
+ },
+ {
+  "word": "properties",
+  "start": 65.53,
+  "end": 66.15
+ },
+ {
+  "word": "has",
+  "start": 66.54,
+  "end": 66.69
+ },
+ {
+  "word": "committed",
+  "start": 66.69,
+  "end": 67.05
+ },
+ {
+  "word": "to",
+  "start": 67.05,
+  "end": 67.13
+ },
+ {
+  "word": "pay",
+  "start": 67.13,
+  "end": 67.48
+ },
+ {
+  "word": "once",
+  "start": 68.25,
+  "end": 68.61
+ },
+ {
+  "word": "we",
+  "start": 68.61,
+  "end": 68.84
+ },
+ {
+  "word": "ship",
+  "start": 68.84,
+  "end": 69.38
+ },
+ {
+  "word": "the",
+  "start": 69.38,
+  "end": 69.48
+ },
+ {
+  "word": "integration",
+  "start": 69.48,
+  "end": 70.06
+ },
+ {
+  "word": "they",
+  "start": 70.06,
+  "end": 70.2
+ },
+ {
+  "word": "asked",
+  "start": 70.2,
+  "end": 70.53
+ },
+ {
+  "word": "for",
+  "start": 70.53,
+  "end": 70.65
+ },
+ {
+  "word": "over",
+  "start": 72.45,
+  "end": 72.67
+ },
+ {
+  "word": "five",
+  "start": 72.67,
+  "end": 72.94
+ },
+ {
+  "word": "thousand",
+  "start": 72.94,
+  "end": 73.44
+ },
+ {
+  "word": "companies",
+  "start": 73.44,
+  "end": 74.0
+ },
+ {
+  "word": "have",
+  "start": 74.0,
+  "end": 74.47
+ },
+ {
+  "word": "registered",
+  "start": 74.47,
+  "end": 75.04
+ },
+ {
+  "word": "with",
+  "start": 75.04,
+  "end": 75.25
+ },
+ {
+  "word": "redan",
+  "start": 75.25,
+  "end": 75.6
+ },
+ {
+  "word": "nigeria's",
+  "start": 76.38,
+  "end": 77.05
+ },
+ {
+  "word": "association",
+  "start": 77.05,
+  "end": 77.61
+ },
+ {
+  "word": "of",
+  "start": 77.61,
+  "end": 77.78
+ },
+ {
+  "word": "real",
+  "start": 77.78,
+  "end": 77.89
+ },
+ {
+  "word": "estate",
+  "start": 77.89,
+  "end": 78.19
+ },
+ {
+  "word": "developers",
+  "start": 78.19,
+  "end": 78.97
+ },
+ {
+  "word": "and",
+  "start": 80.2,
+  "end": 80.37
+ },
+ {
+  "word": "most",
+  "start": 80.37,
+  "end": 80.59
+ },
+ {
+  "word": "of",
+  "start": 80.59,
+  "end": 80.71
+ },
+ {
+  "word": "them",
+  "start": 80.71,
+  "end": 80.87
+ },
+ {
+  "word": "still",
+  "start": 80.87,
+  "end": 81.4
+ },
+ {
+  "word": "run",
+  "start": 81.4,
+  "end": 81.51
+ },
+ {
+  "word": "their",
+  "start": 81.51,
+  "end": 81.68
+ },
+ {
+  "word": "sales",
+  "start": 81.68,
+  "end": 82.5
+ },
+ {
+  "word": "on",
+  "start": 82.77,
+  "end": 82.92
+ },
+ {
+  "word": "spreadsheets",
+  "start": 82.92,
+  "end": 83.95
+ },
+ {
+  "word": "and",
+  "start": 84.63,
+  "end": 84.81
+ },
+ {
+  "word": "whatsapp",
+  "start": 84.81,
+  "end": 85.25
+ },
+ {
+  "word": "we're",
+  "start": 86.82,
+  "end": 86.94
+ },
+ {
+  "word": "not",
+  "start": 86.94,
+  "end": 87.15
+ },
+ {
+  "word": "new",
+  "start": 87.15,
+  "end": 87.37
+ },
+ {
+  "word": "to",
+  "start": 87.37,
+  "end": 87.51
+ },
+ {
+  "word": "this",
+  "start": 87.51,
+  "end": 88.12
+ },
+ {
+  "word": "we've",
+  "start": 89.58,
+  "end": 89.92
+ },
+ {
+  "word": "worked",
+  "start": 89.92,
+  "end": 90.21
+ },
+ {
+  "word": "on",
+  "start": 90.21,
+  "end": 90.48
+ },
+ {
+  "word": "both",
+  "start": 90.48,
+  "end": 90.75
+ },
+ {
+  "word": "sides",
+  "start": 90.75,
+  "end": 91.21
+ },
+ {
+  "word": "of",
+  "start": 91.21,
+  "end": 91.33
+ },
+ {
+  "word": "the",
+  "start": 91.33,
+  "end": 91.4
+ },
+ {
+  "word": "problem",
+  "start": 91.4,
+  "end": 91.88
+ },
+ {
+  "word": "as",
+  "start": 92.54,
+  "end": 93.08
+ },
+ {
+  "word": "operations",
+  "start": 93.18,
+  "end": 93.66
+ },
+ {
+  "word": "executives",
+  "start": 93.66,
+  "end": 94.61
+ },
+ {
+  "word": "inside",
+  "start": 95.74,
+  "end": 96.68
+ },
+ {
+  "word": "real",
+  "start": 96.68,
+  "end": 96.83
+ },
+ {
+  "word": "estate",
+  "start": 96.83,
+  "end": 97.17
+ },
+ {
+  "word": "companies",
+  "start": 97.17,
+  "end": 98.23
+ },
+ {
+  "word": "and",
+  "start": 98.23,
+  "end": 98.34
+ },
+ {
+  "word": "as",
+  "start": 98.34,
+  "end": 98.76
+ },
+ {
+  "word": "real",
+  "start": 98.88,
+  "end": 98.99
+ },
+ {
+  "word": "estate",
+  "start": 98.99,
+  "end": 99.33
+ },
+ {
+  "word": "investors",
+  "start": 99.33,
+  "end": 99.87
+ },
+ {
+  "word": "ourselves",
+  "start": 99.87,
+  "end": 100.49
+ },
+ {
+  "word": "we've",
+  "start": 101.43,
+  "end": 101.91
+ },
+ {
+  "word": "built",
+  "start": 101.91,
+  "end": 103.31
+ },
+ {
+  "word": "products",
+  "start": 103.31,
+  "end": 104.03
+ },
+ {
+  "word": "and",
+  "start": 105.52,
+  "end": 105.68
+ },
+ {
+  "word": "a",
+  "start": 105.68,
+  "end": 105.8
+ },
+ {
+  "word": "startup",
+  "start": 106.0,
+  "end": 106.37
+ },
+ {
+  "word": "before",
+  "start": 106.37,
+  "end": 106.67
+ },
+ {
+  "word": "i'm",
+  "start": 106.67,
+  "end": 106.76
+ },
+ {
+  "word": "the",
+  "start": 106.76,
+  "end": 106.88
+ },
+ {
+  "word": "hustler",
+  "start": 106.88,
+  "end": 107.43
+ },
+ {
+  "word": "demilade",
+  "start": 108.6,
+  "end": 109.43
+ },
+ {
+  "word": "is",
+  "start": 110.37,
+  "end": 110.57
+ },
+ {
+  "word": "the",
+  "start": 110.57,
+  "end": 111.02
+ },
+ {
+  "word": "hacker",
+  "start": 111.02,
+  "end": 111.5
+ },
+ {
+  "word": "sammy",
+  "start": 112.1,
+  "end": 112.98
+ },
+ {
+  "word": "is",
+  "start": 113.24,
+  "end": 113.38
+ },
+ {
+  "word": "the",
+  "start": 113.38,
+  "end": 113.48
+ },
+ {
+  "word": "hipster",
+  "start": 113.48,
+  "end": 114.03
+ },
+ {
+  "word": "together",
+  "start": 115.01,
+  "end": 115.55
+ },
+ {
+  "word": "we",
+  "start": 116.1,
+  "end": 116.28
+ },
+ {
+  "word": "are",
+  "start": 116.28,
+  "end": 116.46
+ },
+ {
+  "word": "terratrail",
+  "start": 116.46,
+  "end": 117.13
+ },
+ {
+  "word": "with",
+  "start": 117.74,
+  "end": 117.83
+ },
+ {
+  "word": "this",
+  "start": 117.83,
+  "end": 118.19
+ },
+ {
+  "word": "grant",
+  "start": 118.19,
+  "end": 119.76
+ },
+ {
+  "word": "we'll",
+  "start": 119.76,
+  "end": 119.97
+ },
+ {
+  "word": "do",
+  "start": 119.97,
+  "end": 120.44
+ },
+ {
+  "word": "three",
+  "start": 122.09,
+  "end": 122.3
+ },
+ {
+  "word": "things",
+  "start": 122.3,
+  "end": 122.83
+ },
+ {
+  "word": "first",
+  "start": 124.07,
+  "end": 124.19
+ },
+ {
+  "word": "ship",
+  "start": 124.19,
+  "end": 124.35
+ },
+ {
+  "word": "the",
+  "start": 124.35,
+  "end": 124.45
+ },
+ {
+  "word": "integrations",
+  "start": 124.45,
+  "end": 125.19
+ },
+ {
+  "word": "our",
+  "start": 125.19,
+  "end": 125.34
+ },
+ {
+  "word": "customers",
+  "start": 125.34,
+  "end": 125.88
+ },
+ {
+  "word": "are",
+  "start": 125.88,
+  "end": 126.1
+ },
+ {
+  "word": "already",
+  "start": 126.56,
+  "end": 126.89
+ },
+ {
+  "word": "asking",
+  "start": 128.13,
+  "end": 128.54
+ },
+ {
+  "word": "for",
+  "start": 128.54,
+  "end": 128.67
+ },
+ {
+  "word": "second",
+  "start": 129.01,
+  "end": 129.24
+ },
+ {
+  "word": "build",
+  "start": 129.24,
+  "end": 129.4
+ },
+ {
+  "word": "an",
+  "start": 129.4,
+  "end": 129.47
+ },
+ {
+  "word": "ai",
+  "start": 129.47,
+  "end": 129.6
+ },
+ {
+  "word": "layer",
+  "start": 129.6,
+  "end": 130.02
+ },
+ {
+  "word": "that",
+  "start": 130.32,
+  "end": 130.66
+ },
+ {
+  "word": "gives",
+  "start": 130.66,
+  "end": 131.07
+ },
+ {
+  "word": "business",
+  "start": 131.62,
+  "end": 132.01
+ },
+ {
+  "word": "owners",
+  "start": 132.01,
+  "end": 132.55
+ },
+ {
+  "word": "intelligence",
+  "start": 132.55,
+  "end": 133.0
+ },
+ {
+  "word": "just",
+  "start": 133.0,
+  "end": 133.33
+ },
+ {
+  "word": "by",
+  "start": 133.33,
+  "end": 133.6
+ },
+ {
+  "word": "chatting",
+  "start": 133.6,
+  "end": 134.12
+ },
+ {
+  "word": "with",
+  "start": 134.12,
+  "end": 134.25
+ },
+ {
+  "word": "their",
+  "start": 134.25,
+  "end": 134.41
+ },
+ {
+  "word": "data",
+  "start": 134.41,
+  "end": 134.64
+ },
+ {
+  "word": "and",
+  "start": 135.67,
+  "end": 135.8
+ },
+ {
+  "word": "third",
+  "start": 135.8,
+  "end": 137.03
+ },
+ {
+  "word": "bring",
+  "start": 137.03,
+  "end": 137.23
+ },
+ {
+  "word": "terratrail",
+  "start": 137.23,
+  "end": 137.86
+ },
+ {
+  "word": "to",
+  "start": 137.86,
+  "end": 138.27
+ },
+ {
+  "word": "thirty",
+  "start": 139.36,
+  "end": 139.92
+ },
+ {
+  "word": "real",
+  "start": 139.92,
+  "end": 140.1
+ },
+ {
+  "word": "estate",
+  "start": 140.1,
+  "end": 140.4
+ },
+ {
+  "word": "companies",
+  "start": 140.4,
+  "end": 140.86
+ },
+ {
+  "word": "helping",
+  "start": 140.86,
+  "end": 141.12
+ },
+ {
+  "word": "them",
+  "start": 141.12,
+  "end": 141.32
+ },
+ {
+  "word": "recover",
+  "start": 141.32,
+  "end": 141.75
+ },
+ {
+  "word": "payments",
+  "start": 141.75,
+  "end": 142.41
+ },
+ {
+  "word": "and",
+  "start": 142.41,
+  "end": 142.72
+ },
+ {
+  "word": "saving",
+  "start": 142.72,
+  "end": 143.09
+ },
+ {
+  "word": "them",
+  "start": 143.09,
+  "end": 143.25
+ },
+ {
+  "word": "hours",
+  "start": 143.45,
+  "end": 144.14
+ },
+ {
+  "word": "no",
+  "start": 145.99,
+  "end": 146.22
+ },
+ {
+  "word": "spreadsheet",
+  "start": 146.22,
+  "end": 147.18
+ },
+ {
+  "word": "no",
+  "start": 147.28,
+  "end": 147.56
+ },
+ {
+  "word": "whatsapp",
+  "start": 147.56,
+  "end": 148.3
+ },
+ {
+  "word": "no",
+  "start": 148.82,
+  "end": 149.0
+ },
+ {
+  "word": "wahala",
+  "start": 149.0,
+  "end": 149.53
+ }
+]

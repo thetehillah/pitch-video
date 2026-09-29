@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>01 Cold open</title>
 <link rel="stylesheet" href="../brand.css">
+<script src="../timeline.js"></script>
 <script src="../common.js"></script>
 <script src="../clutter.js"></script>
 </head>
@@ -12,13 +13,13 @@
 <div id="caption"></div>
 <script>
   // Scene 1 (0-8s): the manual chaos of installment land sales.
-  const CUES = [{ start: 0.6, end: 8, text: 'If you sell land on installments in Nigeria, you know this.' }];
+  const T = sceneTiming(1);
   const clutter = buildClutter(document.getElementById('stage'));
 
-  window.DURATION = 8;
+  window.DURATION = T.duration;
   window.seek = (t) => {
-    clutter.update(t, 0);
-    setCaption(t, CUES);
+    clutter.update(t * CLUTTER_END / T.duration, 0); // the 8s build-up, fitted to the voice
+    setCaption(t, T.cues);
   };
   window.seek(0);
 </script>
